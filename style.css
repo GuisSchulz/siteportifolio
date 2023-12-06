@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&family=Ubuntu:wght@300&display=swap'); /*importando fonte (Menus)*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Tilt neon'; /*aplica a fonte a todo o conteudo*/
+}
+
+body{
+    overflow: hidden;
+}
+
+.scroll{
+    overflow-y: scroll; /* define barra de rolagem no eixo y*/
+}
+
+.background{
+    background-image: url(img/aa.jpg);
+    background-size: cover;
+    background-position: right;
+    width: 100%;
+    height: 100vh;
+    display: block;
+
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    align-items: center; /*alinha os itens ao centro*/
+    text-align: center;
+    padding-top: 30px;
+}
+
+.cabecalho-link {
+    display: flex;
+    gap: 4rem; /*define espaço entre as linhas e colunas*/
+    font-weight: 300;
+    cursor: pointer;
+    margin: 0 40px; /* Espaçamento entre os itens */
+}
+
+.cabecalho-link a{
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    
+}
+
+.cabecalho-link a:hover{ /* aplicando efeito ao passar o mouse sobre os itens */
+    color: #00cafc;
+    transition: 0.1s all;
+    border: solid 2px #00cafc;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.conteiner-text{
+    padding: 150px 0px 250px 200px;
+    background-image: url(img/jovem-bonito-fazendo-pose-de-braco-cruzado-com-confianca_97632-4855.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: 400px;
+}
+
+.conteiner-conteudo{
+    text-align: center;
+    font-size: 18px;
+    padding: 0 90px 0 90px;
+}
+
+.conteiner-conteudo h3{
+    color: #00cafc;
+    text-align: center; /* alinha o texto ao centro*/
+    font-size: 40px;
+}
+
+.conteiner-conteudo h2{
+    border: solid 2px #00cafc; /*acrescenta borda ao item com as caracteristicas*/
+    border-radius: 10px; /*arredondamento da borda*/
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+    
+}
+
+.conteudo-sobre h2{
+    border: none; /*tira a borda do item*/
+}
+
+.text h2{ 
+    font-size: 24px;
+}
+.text h3{ 
+    font-size: 48px;
+    margin-top: 8px;
+}
+
+.text span{
+    color: #00cafc;
+}
+
+.text span:hover{
+    color: #000000;
+}
+
+.text p{
+    color: black;
+}
+
+.redes-sociais a{
+    color: #00cafc;
+    padding: 5px;
+    margin-top: 5px;
+    
+}
+
+.redes-sociais a:hover{
+    color: #000000;
+}
+
+.link :hover{ /*o :hover aplica efeito ao sobrepor o ponteiro do mouse em cima do item .link neste caso aumenta a fonte*/
+    font-size: 52px; 
+    transition: 0.1s all; /*defini o tempo de transição do efeito*/
+}
+
+.conteudo-contato{
+    margin-bottom: 80px;
+    display: flex;
+    /* align-items: center; /* quebrando formatação do titulo*/ 
+    justify-content: center;
+    height: 50vh;
+    
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+
+}
+form input, form textarea{
+    outline: unset;
+    padding: 20px;
+    width: 300px;
+    border: 1px solid #00cafc;
+    border-radius: 18px;
+}
+
+form input:focus, form textarea:focus{
+    background-color: #b1b1b1;
+}
+
+button { /*define as caracteristicas do botão*/
+    background-color: #00cafc;
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #00cafc;
+    border-radius: 18px;
+    cursor: pointer; /*troca o cursor do mouse para a "mãozinha"*/
+}
+
+button:active { /* ao clicar no botão ele trocará de cor*/
+    background-color: aliceblue;
